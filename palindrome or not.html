@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+     crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h2> check for palindrome</h2>
+        <input type="text" id="str" />
+        <button onclick="palindrome()">check></button>
+        <p id="output"></p>
+        <script>
+            function palindrome(){
+            let str=document.getElementById("str").value;
+            let output=document.getElementById("output");
+            
+                let  reversed=str.split("").reverse().join("");
+                
+        
+    
+
+        if(str==reversed){
+            output.innerHTML="it is a palindrome";
+        }else{
+            output.innerHTML="it is not a palindrome";
+        }
+    }
+
+
+       // let amt= prompt ("enter the amount:")
+       //if( amt>500){
+       //  amt=amt-amt*0.1
+       //}
+       // alert("the amount is"+amt);
+
+    //    let n1=17,n2=15,n3=13;
+    //    let s1,s2,s3;
+    //    if(n1<n2){
+    //      if(n1<n3){
+    //      s1=n1;
+    //        if(n2<n3){
+    //        s2=n2;
+    //        s3=n2;
+    //        }else{
+    //        s2=n3;
+    //        s3=n2;
+    //        }
+    //      }else{
+    //     s1=n3;
+    //     s2=n1;
+    //     s3=n2;
+    //      }
+    //     } else {
+    //  if(n2<n3){
+    //     s1=n2;
+    //     if(n1<n3){
+    //         s2=n1;
+    //         s3=n3;
+    //     } else{
+    //         s2=n3;
+    //         s3=n1;
+    //     }
+    //     } else{
+    //         s1=n3;
+    //         s2=n2;
+    //         s3=n1;
+    //     }
+    // }
+   // alert(s1 + "," + s2 + ", " +s3);
+   //palindrome or not 
+
+  //let word = prompt("Enter  word to check palindrome");
+ // let reverseword=word.split("").reverse().join("");
+  //if(reverseword==word){
+   // document.
+ // }else{
+    //alert("it si not a palindrome");
+  //}
+    </script>
+</body>
+</html>
